@@ -1,5 +1,16 @@
 # Contrastive Intrinsic Control (CIC)
 
+This is the official codebase for [CIC: Contrastive Intrinsic Control for Unsupervised Skill Discovery](https://arxiv.org/abs/2202.00161). If you find this codebase useful to your research you can cite it as:
+
+```
+@misc{laskin2022cic,
+Author = {Michael Laskin and Hao Liu and Xue Bin Peng and Denis Yarats and Aravind Rajeswaran and Pieter Abbeel},
+Title = {CIC: Contrastive Intrinsic Control for Unsupervised Skill Discovery},
+Year = {2022},
+Eprint = {arXiv:2202.00161},
+}
+```
+
 This codebase is built on top of the [Unsupervised Reinforcement Learning Benchmark (URLB) codebase](https://anonymous.4open.science/r/urlb). We include agents for all baselines in the `agents` folder. Our method `CIC`  is implemented in `agents/cic.py` and the config is specified in `agents/cic.yaml`.
 
 To pre-train CIC, run the following command:
