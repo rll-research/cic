@@ -11,11 +11,12 @@ import custom_dmc_tasks as cdmc
 
 
 class ExtendedTimeStep(NamedTuple):
-    step_type: Any
-    reward: Any
-    discount: Any
-    observation: Any
-    action: Any
+    def __init__(self, step_type, reward, discount, observation, action):
+        self.step_type = step_type
+        self.reward = reward
+        self.discount = discount
+        self.observation = observation
+        self.action = action
 
     def first(self):
         return self.step_type == StepType.FIRST
