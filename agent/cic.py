@@ -230,7 +230,7 @@ class CICAgent(DDPGAgent):
         if self.use_tb or self.use_wandb:
             if self.reward_free:
                 metrics['extr_reward'] = extr_reward.mean().item()
-                metrics['intr_reward'] = apt_reward.mean().item()
+                metrics['intr_reward'] = intr_reward.mean().item()
             metrics['batch_reward'] = reward.mean().item()
 
         # extend observations with skill
